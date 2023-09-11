@@ -1,0 +1,41 @@
+{
+  "name": "dulljs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/dulljs.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethan-davies/dull.js.git"
+  },
+  "author": "Ethan Davies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethan-davies/dull.js/issues"
+  },
+  "homepage": "https://github.com/ethan-davies/dull.js#readme",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "jest": "^29.6.4",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dist": "link:D:/Desktop/dulljs/dist",
+    "lib": "link:D:/Desktop/dulljs/lib"
+  }
+}

@@ -1,0 +1,19 @@
+body:
+  - type: textarea
+    attributes:
+      label: Summary
+      description: Provide a brief summary of your idea or suggestion.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Any additional details or context that might be helpful.
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: Example
+      description: If applicable, provide an example or use case for your idea.
+    validations:
+      required: false

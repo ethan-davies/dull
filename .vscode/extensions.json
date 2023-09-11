@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "eslint-plugin-jest",
+        "prettier"
+    ]
+}

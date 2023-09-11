@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    package-uptake:
+      group: "all"
+    allow:
+      - dependency-type: "all"
+        dependency-name: "*"
+        versions: "all"
+    labels:
+      - "dependencies"
+    reviewers:
+      - "ethan-davies"
