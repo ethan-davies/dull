@@ -6,7 +6,7 @@ We take the security of our project seriously. If you believe you have found a s
 
 Please follow these guidelines when reporting security vulnerabilities to us:
 
-- Report your findings to the [GitHub private vunerability reporting](https://github.com/dulljs/dull.js/security/advisories) page.
+- Report your findings to the [GitHub private vunerability reporting](https://github.com/ethan-davies/dull/security/advisories) page.
 - Provide detailed information about the vulnerability, including steps to reproduce it.
 - If possible, include any proof-of-concept or exploit code that demonstrates the vulnerability.
 - Do not disclose the vulnerability to others until we have had an opportunity to address it.
