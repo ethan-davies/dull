@@ -70,35 +70,35 @@ export default class Server {
         this.endpoints.push(endpoint)
     }
 
-    start() {
+    private registerHandler(
+        path: string,
+        handler: (req: http.IncomingMessage, res: http.ServerResponse) => void,
+        method: Method,
+    ) {
+        this.registerEndpoint(path, handler, method)
+    }
+
+    private createMethod(method: Method) {
+        return (
+            path: string,
+            handler: (
+                req: http.IncomingMessage,
+                res: http.ServerResponse,
+            ) => void,
+        ) => {
+            this.registerHandler(path, handler, method)
+        }
+    }
+
+    start(callback?: () => void) {
         this.server.listen(this.port)
+        if (callback) {
+            callback()
+        }
     }
 
-    get(
-        path: string,
-        handler: (req: http.IncomingMessage, res: http.ServerResponse) => void,
-    ) {
-        this.registerEndpoint(path, handler, Method.GET)
-    }
-
-    post(
-        path: string,
-        handler: (req: http.IncomingMessage, res: http.ServerResponse) => void,
-    ) {
-        this.registerEndpoint(path, handler, Method.POST)
-    }
-
-    put(
-        path: string,
-        handler: (req: http.IncomingMessage, res: http.ServerResponse) => void,
-    ) {
-        this.registerEndpoint(path, handler, Method.PUT)
-    }
-
-    delete(
-        path: string,
-        handler: (req: http.IncomingMessage, res: http.ServerResponse) => void,
-    ) {
-        this.registerEndpoint(path, handler, Method.DELETE)
-    }
+    get = this.createMethod(Method.GET)
+    post = this.createMethod(Method.POST)
+    put = this.createMethod(Method.PUT)
+    delete = this.createMethod(Method.DELETE)
 }
