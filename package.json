@@ -11,19 +11,19 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "node dist/dull.js",
     "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethan-davies/dull.js.git"
+    "url": "git+https://github.com/ethan-davies/dull.git"
   },
   "author": "Ethan Davies",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ethan-davies/dull.js/issues"
+    "url": "https://github.com/ethan-davies/dull/issues"
   },
-  "homepage": "https://github.com/ethan-davies/dull.js#readme",
+  "homepage": "https://github.com/ethan-davies/dull#readme",
   "devDependencies": {
     "@types/node": "^20.6.0",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
@@ -33,5 +33,9 @@
     "jest": "^29.6.4",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dull": "link:D:/Desktop/dull.js"
   }
 }

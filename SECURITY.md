@@ -16,4 +16,4 @@ Please follow these guidelines when reporting security vulnerabilities to us:
 
 If you have any questions or need to contact us regarding security-related issues, please do not hesitate to contact one of the maintainers.
 
-Please do note it helps us out alot if we stick to English through emails.
+Please do note it helps us out a lot if we stick to English through emails.
